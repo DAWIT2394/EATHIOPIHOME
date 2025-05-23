@@ -55,6 +55,11 @@ function Gallery() {
                                     <img className="img-fluid" src="images/gallery-img-06.jpg" alt="Gallery Images" />
                                 </a>
                             </div>
+                             <div className="col-sm-6 col-md-4 col-lg-4">
+                                <a className="lightbox" href="images/gallery-img-06.jpg">
+                                    <img className="img-fluid" src="images/gallery-img-06.jpg" alt="Gallery Images" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -68,7 +68,7 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-12">
                 <p className="company-name">
-                  All Rights Reserved. &copy; 2018{' '}
+                  All Rights Reserved. &copy; 2025{' '}
                   <a href="#">Eathiopia Restaurant</a> Design By :{' '}
                   <a href="https://html.design/">dc</a>
                 </p>
