@@ -2,6 +2,7 @@ import Gallery from './components/gallary';
 import Header from './components/Nav';
 import Home from './components/Home';
 import Menu from './components/Menu';
+import Footer from './components/Footer';
 function App() {
   return (
     
@@ -13,6 +14,10 @@ function App() {
 <Home/>
 <Menu/>
      <Gallery/>
+    <div>
+
+    </div>
+<Footer/>
     </div>
   );
 }
