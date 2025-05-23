@@ -1,5 +1,5 @@
 import React from "react";
-
+import CustomerReview from "./CustomerReview";
 function Gallery() {
     return (
         <>
@@ -59,6 +59,7 @@ function Gallery() {
                     </div>
                 </div>
             </div>
+            <CustomerReview/>
         </>
     );
 }

@@ -405,13 +405,13 @@ button:focus{
 
 .inner-menu-box{}
 .inner-menu-box .nav-pills .nav-link.active{
-	background: #d65106;
+	background: #017006;
 }
 .inner-menu-box .nav-pills .nav-link{
 	font-size: 18px;
 }
 .inner-menu-box .nav-pills .nav-link:hover{
-	background: #d65106;
+	background: #9a9c01;
 	color: #ffffff;
 }
 
@@ -571,7 +571,7 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .contact-imfo-box{
-	background: #d65106;
+	background: #a57204;
 	padding: 30px 0;
 	border-radius: 100px;
 }
@@ -588,7 +588,7 @@ button:focus{
 	line-height: 60px;
 	text-align: center;
 	background: #fff;
-	color: #d65106;
+	color: #a53114;
 	font-size: 30px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
