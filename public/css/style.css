@@ -178,7 +178,6 @@ button:focus{
 	color: #010101;
 	font-size: 16px;
 	padding: 10px 20px;
-	border-radius: 4px;
 	text-transform: uppercase;
 }
 
@@ -189,7 +188,7 @@ button:focus{
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
 	background: #d65106;
 	color: #ffffff;
-	border-radius: 4px;
+	/* border-radius: 4px; */
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{

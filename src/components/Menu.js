@@ -56,14 +56,41 @@ export default function Menu() {
           </div>
 
           <div className="row inner-menu-box">
-            <div className="col-3">
-              <div className="nav flex-column nav-pills">
-                <button className={`nav-link ${activeTab === "all" ? "active" : ""}`} onClick={() => setActiveTab("all")}>All</button>
-                <button className={`nav-link ${activeTab === "drinks" ? "active" : ""}`} onClick={() => setActiveTab("drinks")}>Drinks</button>
-                <button className={`nav-link ${activeTab === "lunch" ? "active" : ""}`} onClick={() => setActiveTab("lunch")}>Lunch</button>
-                <button className={`nav-link ${activeTab === "dinner" ? "active" : ""}`} onClick={() => setActiveTab("dinner")}>Dinner</button>
-              </div>
-            </div>
+          <div className="col-3">
+  <div className="nav flex-column nav-pills">
+    <button
+      style={{ border: "none" }}
+      className={`nav-link mb-2 ${activeTab === "all" ? "active" : ""}`}
+      onClick={() => setActiveTab("all")}
+    >
+      All
+    </button>
+    <button
+      style={{ border: "none" }}
+      className={`nav-link mb-2 ${activeTab === "drinks" ? "active" : ""}`}
+      onClick={() => setActiveTab("drinks")}
+    >
+      Drinks
+    </button>
+    <button
+      style={{ border: "none" }}
+      className={`nav-link mb-2 ${activeTab === "lunch" ? "active" : ""}`}
+      onClick={() => setActiveTab("lunch")}
+    >
+      Lunch
+    </button>
+    <button
+      style={{ border: "none" }}
+      className={`nav-link mb-2 ${activeTab === "dinner" ? "active" : ""}`}
+      onClick={() => setActiveTab("dinner")}
+    >
+      Dinner
+    </button>
+  </div>
+</div>
+
+
+
 
             <div className="col-9">
               <div className="tab-content">

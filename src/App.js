@@ -3,6 +3,7 @@ import Header from './components/Nav';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
+import About from './components/About';
 function App() {
   return (
     
@@ -15,7 +16,7 @@ function App() {
 <Menu/>
      <Gallery/>
     <div>
-
+<About/>
     </div>
 <Footer/>
     </div>
