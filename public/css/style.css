@@ -318,11 +318,11 @@ button:focus{
 
 .about-section-box{
 	padding: 70px 0px;
-	background: #ffffff url(../images/about-bg.jpg) no-repeat bottom center;
+	background: #ffffff url(../images/eata1.jpg) no-repeat bottom center;
 	background-size: cover;
 }
 .about-section-box .img-fluid{
-	box-shadow: 20px 20px 0px #d65106;
+	box-shadow: 20px 20px 0px #27aa07;
 }
 .inner-column{
 	text-align: left;
@@ -334,7 +334,7 @@ button:focus{
 	font-weight: 500;
 }
 .inner-column h1 span{
-	color: #d65106;
+	color: #8f170e;
 }
 .inner-column h4{
 	font-size: 16px;

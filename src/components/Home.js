@@ -52,7 +52,7 @@ export default function Home() {
           {/* Text Column */}
           <div className="col-lg-6 col-md-6 text-center">
             <div className="inner-column">
-              <h1>Welcome To <span>Live Dinner Restaurant</span></h1>
+              <h1>Welcome To <span>Eathiopia Restaurant</span></h1>
               <h4>Little Story</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. 
@@ -69,7 +69,7 @@ export default function Home() {
 
           {/* Image Column */}
           <div className="col-lg-6 col-md-6">
-            <img src="images/about-img.jpg" alt="About" className="img-fluid" />
+            <img src="images/eatt.jpg" alt="About" className="img-fluid" />
           </div>
 
           {/* Bottom Text */}
@@ -81,12 +81,7 @@ export default function Home() {
                 sapien porttitor, ut pretium ipsum feugiat. Aenean volutpat porta nisi in gravida. 
                 Curabitur pulvinar ligula sed facilisis bibendum. Nullam vitae nulla elit.
               </p>
-              <p>
-                Integer purus velit, eleifend eu magna volutpat, porttitor blandit lectus. Aenean risus 
-                odio, efficitur quis erat eget, mattis tristique arcu. Fusce in ante enim. Integer 
-                consectetur elit nec laoreet rutrum. Mauris porta turpis nec tellus accumsan pellentesque. 
-                Morbi non quam tempus, convallis urna in, cursus mauris.
-              </p>
+            
             </div>
           </div>
         </div>

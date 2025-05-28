@@ -22,7 +22,7 @@ export default function About() {
             <div className="col-lg-6 col-md-6 text-center">
               <div className="inner-column">
                 <h1>
-                  Welcome To <span>Live Dinner Restaurant</span>
+                  Welcome To <span>Eathiopia Restaurant</span>
                 </h1>
                 <h4>Little Story</h4>
                 <p>
@@ -43,26 +43,11 @@ export default function About() {
 
             {/* Image Column */}
             <div className="col-lg-6 col-md-6">
-              <img src="images/about-img.jpg" alt="About" className="img-fluid" />
+              <img src="images/eatt.jpg" alt="About" className="img-fluid" />
             </div>
 
             {/* Full Width Text */}
-            <div className="col-md-12">
-              <div className="inner-pt">
-                <p>
-                  Sed tincidunt, neque at egestas imperdiet, nulla sapien blandit nunc, sit amet pulvinar
-                  orci nibh ut massa. Proin nec lectus sed nunc placerat semper. Duis hendrerit elit nec
-                  sapien porttitor, ut pretium ipsum feugiat. Aenean volutpat porta nisi in gravida.
-                  Curabitur pulvinar ligula sed facilisis bibendum. Nullam vitae nulla elit.
-                </p>
-                <p>
-                  Integer purus velit, eleifend eu magna volutpat, porttitor blandit lectus. Aenean risus
-                  odio, efficitur quis erat eget, mattis tristique arcu. Fusce in ante enim. Integer
-                  consectetur elit nec laoreet rutrum. Mauris porta turpis nec tellus accumsan pellentesque.
-                  Morbi non quam tempus, convallis urna in, cursus mauris.
-                </p>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
