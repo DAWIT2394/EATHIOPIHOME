@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import '../components/Home.css'
 export default function Home() {
   const sliderSettings = {
     dots: true,
@@ -15,12 +15,16 @@ export default function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    fade: true,
+    cssEase: 'linear',
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   const slides = [
     {
       img: '/images/slider-01.jpg',
-      title: 'Eathiopian Restaurant',
+      title: '',
     },
     {
       img: '/images/slider-02.jpg',
@@ -32,26 +36,59 @@ export default function Home() {
     },
   ];
 
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block', right: '15px' }}
+        onClick={onClick}
+      >
+        <i className="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block', left: '15px', zIndex: 1 }}
+        onClick={onClick}
+      >
+        <i className="fa fa-angle-left" aria-hidden="true"></i>
+      </div>
+    );
+  }
+
   return (
     <div>
       {/* Hero Slider */}
-      <div className="cover-slides">
+      <div id="slides" className="cover-slides">
         <Slider {...sliderSettings}>
           {slides.map((slide, index) => (
             <div key={index} className="text-left">
               <img
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
-                style={{ width: '100%', height: '600px', objectFit: 'cover' }}
+                className="slider-img"
               />
-              <div className="container position-absolute top-50 start-50 translate-middle text-white">
+              <div className="container">
                 <div className="row">
-                  <div className="col-md-12 text-center">
-                    <h1 className="mb-3">
+                  <div className="col-md-12">
+                    <h1 className="m-b-20">
                       <strong>Welcome To <br /> {slide.title}</strong>
                     </h1>
-                    <p className="mb-4">See how your users experience your website in realtime or view trends over time.</p>
-                    <a className="btn btn-lg btn-outline-light" href="#">Reservation</a>
+                    <p className="m-b-40">
+                      See how your users experience your website in realtime or view <br /> 
+                      trends to see any changes in performance over time.
+                    </p>
+                    <p>
+                      <a className="btn btn-lg btn-circle btn-outline-new-white" href="#">
+                        Reservation
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -61,7 +98,7 @@ export default function Home() {
       </div>
 
       {/* About Section */}
-      <div className="about-section-box py-1">
+      <div className="about-section-box py-5">
         <div className="container">
           <div className="row align-items-center">
             {/* Text Column */}
@@ -78,7 +115,9 @@ export default function Home() {
                   Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem,
                   a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.
                 </p>
-                <a className="btn btn-lg btn-outline-dark mt-3" href="#">Reservation</a>
+                <a className="btn btn-lg btn-circle btn-outline-dark mt-3" href="#">
+                  Reservation
+                </a>
               </div>
             </div>
 
