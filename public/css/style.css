@@ -175,18 +175,18 @@ button:focus{
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
-	color: #010101;
+	color: #c00606;
 	font-size: 16px;
 	padding: 10px 20px;
 	text-transform: uppercase;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
-	background: #d65106;
+	background: #d4a302;
 	color: #ffffff;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
-	background: #d65106;
+	background:#028614;
 	color: #ffffff;
 	/* border-radius: 4px; */
 }
@@ -218,7 +218,7 @@ button:focus{
 	height: 100vh;
 }
 .slides-navigation a {
-	background: #d65106;
+	background: #30d606;
     position: absolute;
     height: 50px;
     width: 50px;

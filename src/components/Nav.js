@@ -11,6 +11,7 @@ export default function Nav() {
   };
 
   return (
+    <header className='top-navbar'>
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
       <div className="container">
@@ -65,5 +66,6 @@ export default function Nav() {
         </div>
       </div>
     </nav>
+    </header>
   );
 }

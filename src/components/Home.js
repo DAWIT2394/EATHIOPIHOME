@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -6,6 +7,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../components/Home.css'
 export default function Home() {
+  const [activeTab, setActiveTab] = useState("all");
+
+  const renderItems = (category) => {
+    const allItems = [
+      { category: "drinks", name: "Special Drinks 1", img: "images/img-01.jpg", price: "$7.79" },
+      { category: "drinks", name: "Special Drinks 2", img: "images/img-02.jpg", price: "$9.79" },
+      { category: "drinks", name: "Special Drinks 3", img: "images/img-03.jpg", price: "$10.79" },
+      { category: "lunch", name: "Special Lunch 1", img: "images/img-04.jpg", price: "$15.79" },
+      { category: "lunch", name: "Special Lunch 2", img: "images/img-05.jpg", price: "$18.79" },
+      { category: "lunch", name: "Special Lunch 3", img: "images/img-06.jpg", price: "$20.79" },
+      { category: "dinner", name: "Special Dinner 1", img: "images/img-07.jpg", price: "$25.79" },
+      { category: "dinner", name: "Special Dinner 2", img: "images/img-08.jpg", price: "$22.79" },
+      { category: "dinner", name: "Special Dinner 3", img: "images/img-09.jpg", price: "$24.79" },
+    ];
+
+    const filtered = category === "all" ? allItems : allItems.filter(item => item.category === category);
+
+    return filtered.map((item, index) => (
+      <div key={index} className="col-lg-4 col-md-6 special-grid">
+        <div className="gallery-single fix">
+          <img src={item.img} className="img-fluid" alt={item.name} />
+          <div className="why-text">
+            <h4>{item.name}</h4>
+            <p>Sed id magna vitae eros sagittis euismod.</p>
+            <h5>{item.price}</h5>
+          </div>
+        </div>
+      </div>
+    ));
+  };
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -96,6 +127,7 @@ export default function Home() {
           ))}
         </Slider>
       </div>
+{/* Menu */}
 
       {/* About Section */}
       <div className="about-section-box py-5">
