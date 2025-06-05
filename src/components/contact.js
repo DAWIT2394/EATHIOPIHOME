@@ -6,7 +6,7 @@ export default function Contact() {
     <div>
       {/* Map Section */}
       <div className="map-full" data-wow-delay="0.4s">
-  <div id="google-map" style={{ width: '100%', height: '80vh' ,paddingTop:'7rem'}}>
+  <div id="google-map" style={{ width: '100%', height: '70vh' ,paddingTop:'7rem'}}>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57722.183116565466!2d55.28421472167969!3d25.282812499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5dcfb52863f9%3A0xe785222c1c1f9b3b!2sEathiopian%20Restaurant!5e0!3m2!1sen!2set!4v1747831400514!5m2!1sen!2set"
       width="100%"
