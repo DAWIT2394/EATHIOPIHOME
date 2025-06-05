@@ -78,3 +78,17 @@
     color: white;
     opacity: 0.8;
   }
+  .cover-slides {
+    margin-bottom: 0; /* Remove space below slider */
+    padding-bottom: 0;
+  }
+  
+  .qt-box {
+    margin-top: 0; /* Remove space above menu */
+    padding-top: 0;
+  }
+  
+  .menu-box {
+    margin-top: 0;
+  }
+  

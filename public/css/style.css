@@ -368,13 +368,16 @@ button:focus{
     font-size: 35px;
     font-weight: 300;
     line-height: 44px;
-    color: #fff;
+    color: #46b143;
 	font-family: 'Rubik', sans-serif;
 	margin-bottom: 20px;
+    font-weight: bold;
+    background-position: center center;
 }
 
 .qt-background span {
-    color: #fff;
+    color: hwb(59 0% 0%);
+
     font-size: 28px;  
 	font-weight: 600;	
 }
@@ -689,7 +692,7 @@ button:focus{
 }
 .footer-area p a{
 	font-size: 18px;
-	color: #ffffff;
+	color: #0e0101;
 }
 .footer-area p a:hover{
 	color: #d65106;
