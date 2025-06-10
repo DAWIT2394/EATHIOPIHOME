@@ -1,4 +1,5 @@
 import React from 'react';
+import Galleryy from './G';
 
 export default function About() {
   return (
@@ -49,6 +50,7 @@ export default function About() {
             {/* Full Width Text */}
            
           </div>
+
         </div>
       </div>
     </>

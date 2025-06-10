@@ -175,20 +175,21 @@ button:focus{
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
-	color: #c00606;
+	color: #010101;
 	font-size: 16px;
 	padding: 10px 20px;
+	border-radius: 4px;
 	text-transform: uppercase;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
-	background: #d4a302;
+	background: #d65106;
 	color: #ffffff;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
-	background:#028614;
+	background: #d65106;
 	color: #ffffff;
-	/* border-radius: 4px; */
+	border-radius: 4px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{
@@ -218,7 +219,7 @@ button:focus{
 	height: 100vh;
 }
 .slides-navigation a {
-	background: #30d606;
+	background: #d65106;
     position: absolute;
     height: 50px;
     width: 50px;
@@ -318,11 +319,12 @@ button:focus{
 
 .about-section-box{
 	padding: 70px 0px;
-	background: #ffffff url(../images/eata1.jpg) no-repeat bottom center;
+		background: #ffffff url(../images/eata1.jpg) no-repeat bottom center;
+
 	background-size: cover;
 }
 .about-section-box .img-fluid{
-	box-shadow: 20px 20px 0px #27aa07;
+	box-shadow: 20px 20px 0px #d65106;
 }
 .inner-column{
 	text-align: left;
@@ -334,7 +336,7 @@ button:focus{
 	font-weight: 500;
 }
 .inner-column h1 span{
-	color: #8f170e;
+	color: #d65106;
 }
 .inner-column h4{
 	font-size: 16px;
@@ -368,16 +370,13 @@ button:focus{
     font-size: 35px;
     font-weight: 300;
     line-height: 44px;
-    color: #46b143;
+    color: #fff;
 	font-family: 'Rubik', sans-serif;
 	margin-bottom: 20px;
-    font-weight: bold;
-    background-position: center center;
 }
 
 .qt-background span {
-    color: hwb(59 0% 0%);
-
+    color: #fff;
     font-size: 28px;  
 	font-weight: 600;	
 }
@@ -407,13 +406,16 @@ button:focus{
 
 .inner-menu-box{}
 .inner-menu-box .nav-pills .nav-link.active{
-	background: #017006;
+	background: #03831f;
+    border-radius: 5rem;
 }
 .inner-menu-box .nav-pills .nav-link{
 	font-size: 18px;
+    border-radius: 5rem;
+
 }
 .inner-menu-box .nav-pills .nav-link:hover{
-	background: #9a9c01;
+	background: #d5e403;
 	color: #ffffff;
 }
 
@@ -573,7 +575,7 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .contact-imfo-box{
-	background: #a57204;
+	background: #d65106;
 	padding: 30px 0;
 	border-radius: 100px;
 }
@@ -590,7 +592,7 @@ button:focus{
 	line-height: 60px;
 	text-align: center;
 	background: #fff;
-	color: #a53114;
+	color: #d65106;
 	font-size: 30px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -692,7 +694,7 @@ button:focus{
 }
 .footer-area p a{
 	font-size: 18px;
-	color: #0e0101;
+	color: #ffffff;
 }
 .footer-area p a:hover{
 	color: #d65106;
