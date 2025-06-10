@@ -175,21 +175,20 @@ button:focus{
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
-	color: #010101;
+	color: #c00606;
 	font-size: 16px;
 	padding: 10px 20px;
-	border-radius: 4px;
 	text-transform: uppercase;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
-	background: #d65106;
+	background: #d4a302;
 	color: #ffffff;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
-	background: #d65106;
+	background:#028614;
 	color: #ffffff;
-	border-radius: 4px;
+	/* border-radius: 4px; */
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{
@@ -209,8 +208,7 @@ button:focus{
 }
 .navbar-light .navbar-toggler:hover{
 	background: #d65106;
-}
-
+}y
 /*------------------------------------------------------------------
     Slider
 -------------------------------------------------------------------*/
@@ -219,7 +217,7 @@ button:focus{
 	height: 100vh;
 }
 .slides-navigation a {
-	background: #d65106;
+	background: #30d606;
     position: absolute;
     height: 50px;
     width: 50px;
@@ -319,12 +317,11 @@ button:focus{
 
 .about-section-box{
 	padding: 70px 0px;
-		background: #ffffff url(../images/eata1.jpg) no-repeat bottom center;
-
+	background: #ffffff url(../images/eata1.jpg) no-repeat bottom center;
 	background-size: cover;
 }
 .about-section-box .img-fluid{
-	box-shadow: 20px 20px 0px #d65106;
+	box-shadow: 20px 20px 0px #27aa07;
 }
 .inner-column{
 	text-align: left;
@@ -336,7 +333,7 @@ button:focus{
 	font-weight: 500;
 }
 .inner-column h1 span{
-	color: #d65106;
+	color: #8f170e;
 }
 .inner-column h4{
 	font-size: 16px;
@@ -353,6 +350,93 @@ button:focus{
 	color: #ffffff;
 }
 
+/* Gallery */
+.carousel-container {
+  position: relative;
+  margin: 50px auto;
+  perspective: 1000px;
+  max-width: 100%;
+}
+
+#carousel {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Maintain aspect ratio */
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+#spinner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+#spinner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  backface-visibility: hidden;
+  transition: transform 0.3s;
+}
+
+.navv {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav.left {
+  left: -1rem;
+}
+
+.nav.right {
+  right: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    margin: 30px auto;
+  }
+  
+  .nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    margin: 20px auto;
+  }
+  
+  .nav {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+}
 /*------------------------------------------------------------------
     QT
 -------------------------------------------------------------------*/
@@ -370,13 +454,16 @@ button:focus{
     font-size: 35px;
     font-weight: 300;
     line-height: 44px;
-    color: #fff;
+    color: #46b143;
 	font-family: 'Rubik', sans-serif;
 	margin-bottom: 20px;
+    font-weight: bold;
+    background-position: center center;
 }
 
 .qt-background span {
-    color: #fff;
+    color: hwb(59 0% 0%);
+
     font-size: 28px;  
 	font-weight: 600;	
 }
@@ -406,16 +493,13 @@ button:focus{
 
 .inner-menu-box{}
 .inner-menu-box .nav-pills .nav-link.active{
-	background: #03831f;
-    border-radius: 5rem;
+	background: #017006;
 }
 .inner-menu-box .nav-pills .nav-link{
 	font-size: 18px;
-    border-radius: 5rem;
-
 }
 .inner-menu-box .nav-pills .nav-link:hover{
-	background: #d5e403;
+	background: #9a9c01;
 	color: #ffffff;
 }
 
@@ -575,7 +659,7 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .contact-imfo-box{
-	background: #d65106;
+	background: #a57204;
 	padding: 30px 0;
 	border-radius: 100px;
 }
@@ -592,7 +676,7 @@ button:focus{
 	line-height: 60px;
 	text-align: center;
 	background: #fff;
-	color: #d65106;
+	color: #a53114;
 	font-size: 30px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -694,7 +778,7 @@ button:focus{
 }
 .footer-area p a{
 	font-size: 18px;
-	color: #ffffff;
+	color: #0e0101;
 }
 .footer-area p a:hover{
 	color: #d65106;

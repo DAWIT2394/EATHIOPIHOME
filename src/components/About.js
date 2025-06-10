@@ -50,6 +50,7 @@ export default function About() {
             {/* Full Width Text */}
            
           </div>
+        <Galleryy/>
 
         </div>
       </div>

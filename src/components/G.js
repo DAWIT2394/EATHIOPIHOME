@@ -63,8 +63,8 @@ export default function Carousel3D() {
           ))}
         </figure>
       </div>
-      <span className="nav left" onClick={() => gallerySpin("left")}>&lt;</span>
-      <span className="nav right" onClick={() => gallerySpin("right")}>&gt;</span>
+      <span className="navv left" onClick={() => gallerySpin("left")}>&lt;</span>
+      <span className="navv right" onClick={() => gallerySpin("right")}>&gt;</span>
     </div>
   );
 }
