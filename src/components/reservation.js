@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Reservation() {
+    const [formData, setFormData] = useState({
+        date: "",
+        time: "",
+        person: "",
+        name: "",
+        email: "",
+        phone: "",
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // You can add actual submit logic here (e.g. API call)
+        console.log("Reservation submitted:", formData);
+        alert("Reservation submitted!");
+    };
+
     return (
         <div>
             <div className="all-page-title page-breadcrumb">
@@ -19,7 +43,7 @@ export default function Reservation() {
                         <div className="col-lg-12">
                             <div className="heading-title text-center">
                                 <h2>Reservation</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                              <strong>  <p>Explore the vibrant dishes and cultural moments in our Gallery to see what makes Eathiopian Restaurant truly special.</p></strong>
                             </div>
                         </div>
                     </div>
@@ -27,113 +51,107 @@ export default function Reservation() {
                     <div className="row">
                         <div className="col-lg-12 col-sm-12 col-xs-12">
                             <div className="contact-block">
-                                <form id="contactForm">
+                                <form onSubmit={handleSubmit}>
                                     <div className="row">
+                                        {/* Left side - Booking Info */}
                                         <div className="col-md-6">
                                             <h3>Book a table</h3>
 
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <input
-                                                        id="input_date"
-                                                        className="datepicker picker__input form-control"
-                                                        name="date"
-                                                        type="text"
-                                                        required
-                                                        data-error="Please enter Date"
-                                                    />
-                                                    <div className="help-block with-errors"></div>
-                                                </div>
+                                            <div className="form-group">
+                                                <label htmlFor="date">Date</label>
+                                                <input
+                                                    type="date"
+                                                    id="date"
+                                                    name="date"
+                                                    className="form-control"
+                                                    value={formData.date}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </div>
 
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <input
-                                                        id="input_time"
-                                                        className="time form-control picker__input"
-                                                        type="text"
-                                                        required
-                                                        data-error="Please enter time"
-                                                    />
-                                                    <div className="help-block with-errors"></div>
-                                                </div>
+                                            <div className="form-group">
+                                                <label htmlFor="time">Time</label>
+                                                <input
+                                                    type="time"
+                                                    id="time"
+                                                    name="time"
+                                                    className="form-control"
+                                                    value={formData.time}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </div>
 
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <select
-                                                        className="custom-select d-block form-control"
-                                                        id="person"
-                                                        required
-                                                        data-error="Please select Person"
-                                                    >
-                                                        <option disabled selected>
-                                                            Select Person*
-                                                        </option>
-                                                        {[1, 2, 3, 4, 5, 6, 7].map((n) => (
-                                                            <option key={n} value={n}>{n}</option>
-                                                        ))}
-                                                    </select>
-                                                    <div className="help-block with-errors"></div>
-                                                </div>
-                                            </div>
+                                            <div className="form-group">
+    <label htmlFor="person">Number of People*</label>
+    <input
+        type="number"
+        id="person"
+        name="person"
+        className="form-control"
+        min="1"
+        value={formData.person}
+        onChange={handleChange}
+        required
+    />
+</div>
+
                                         </div>
 
+                                        {/* Right side - Contact Info */}
                                         <div className="col-md-6">
                                             <h3>Contact Details</h3>
 
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        id="name"
-                                                        name="name"
-                                                        placeholder="Your Name"
-                                                        required
-                                                        data-error="Please enter your name"
-                                                    />
-                                                    <div className="help-block with-errors"></div>
-                                                </div>
+                                            <div className="form-group">
+                                                <label htmlFor="name">Name</label>
+                                                <input
+                                                    type="text"
+                                                    id="name"
+                                                    name="name"
+                                                    className="form-control"
+                                                    placeholder="Your Name"
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </div>
 
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <input
-                                                        type="email"
-                                                        placeholder="Your Email"
-                                                        id="email"
-                                                        className="form-control"
-                                                        name="email"
-                                                        required
-                                                        data-error="Please enter your email"
-                                                    />
-                                                    <div className="help-block with-errors"></div>
-                                                </div>
+                                            <div className="form-group">
+                                                <label htmlFor="email">Email</label>
+                                                <input
+                                                    type="email"
+                                                    id="email"
+                                                    name="email"
+                                                    className="form-control"
+                                                    placeholder="Your Email"
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </div>
 
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <input
-                                                        type="text"
-                                                        placeholder="Your Number"
-                                                        id="phone"
-                                                        className="form-control"
-                                                        name="phone"
-                                                        required
-                                                        data-error="Please enter your Number"
-                                                    />
-                                                    <div className="help-block with-errors"></div>
-                                                </div>
+                                            <div className="form-group">
+                                                <label htmlFor="phone">Phone</label>
+                                                <input
+                                                    type="text"
+                                                    id="phone"
+                                                    name="phone"
+                                                    className="form-control"
+                                                    placeholder="Your Number"
+                                                    value={formData.phone}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </div>
                                         </div>
 
+                                        {/* Submit */}
                                         <div className="col-md-12">
                                             <div className="submit-button text-center">
-                                                <button className="btn btn-common" id="submit" type="submit">
+                                                <button type="submit" className="btn btn-common">
                                                     Book Table
                                                 </button>
-                                                <div id="msgSubmit" className="h3 text-center hidden"></div>
                                                 <div className="clearfix"></div>
                                             </div>
                                         </div>
