@@ -7,7 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../components/Home.css'
 import CustomerReview from "./CustomerReview";
-
+const galleryImages = [
+  "images/g3.jpg",
+  "images/g2.jpg",
+  "images/g3.jpg",
+  "images/g4.jpg",
+  "images/g5.jpg",
+  "images/g2.jpg",
+];
 export default function Home() {
   const [activeTab, setActiveTab] = useState("all");
 
@@ -251,56 +258,35 @@ Whether you're joining us for a casual lunch, a family dinner, or a cultural fea
     </div>
     {/* Gallery */}
     <div className="gallery-box">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="heading-title text-center">
-                                <h2>Gallery</h2>
-                                <p>Explore the vibrant dishes and cultural moments in our Gallery to see what makes Eathiopian Restaurant truly special.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="tz-gallery">
-                        <div className="row">
-                            <div className="col-sm-12 col-md-4 col-lg-4">
-                                <a className="lightbox" href="images/gallery-img-01.jpg">
-                                    <img className="img-fluid" src="images/gallery-img-01.jpg" alt="Gallery Images" />
-                                </a>
-                            </div>
-                            <div className="col-sm-6 col-md-4 col-lg-4">
-                                <a className="lightbox" href="images/gallery-img-02.jpg">
-                                    <img className="img-fluid" src="images/gallery-img-02.jpg" alt="Gallery Images" />
-                                </a>
-                            </div>
-                            <div className="col-sm-6 col-md-4 col-lg-4">
-                                <a className="lightbox" href="images/gallery-img-03.jpg">
-                                    <img className="img-fluid" src="images/gallery-img-03.jpg" alt="Gallery Images" />
-                                </a>
-                            </div>
-                            <div className="col-sm-12 col-md-4 col-lg-4">
-                                <a className="lightbox" href="images/gallery-img-04.jpg">
-                                    <img className="img-fluid" src="images/gallery-img-04.jpg" alt="Gallery Images" />
-                                </a>
-                            </div>
-                            <div className="col-sm-6 col-md-4 col-lg-4">
-                                <a className="lightbox" href="images/gallery-img-05.jpg">
-                                    <img className="img-fluid" src="images/gallery-img-05.jpg" alt="Gallery Images" />
-                                </a>
-                            </div>
-                            <div className="col-sm-6 col-md-4 col-lg-4">
-                                <a className="lightbox" href="images/gallery-img-06.jpg">
-                                    <img className="img-fluid" src="images/gallery-img-06.jpg" alt="Gallery Images" />
-                                </a>
-                            </div>
-                             <div className="col-sm-6 col-md-4 col-lg-4">
-                                <a className="lightbox" href="images/gallery-img-06.jpg">
-                                    <img className="img-fluid" src="images/gallery-img-06.jpg" alt="Gallery Images" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="heading-title text-center">
+                <h2>Gallery</h2>
+                <p>Explore the vibrant dishes and cultural moments in our Gallery to see what makes Eathiopian Restaurant truly special.</p>
+              </div>
             </div>
+          </div>
+
+          <div className="tz-gallery">
+            <div className="row">
+              {galleryImages.map((imgSrc, index) => (
+                <div key={index} className="col-sm-6 col-md-4 col-lg-4">
+                  <a className="lightbox" href={imgSrc}>
+                  <img
+  className="img-fluid"
+  src={imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  style={{ width: "100%", height: "250px", objectFit: "cover", borderRadius: "1px" }}
+/>
+
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
             <CustomerReview/>
 
     </div>
