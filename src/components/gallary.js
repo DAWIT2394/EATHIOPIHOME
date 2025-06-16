@@ -19,7 +19,7 @@ function Gallery() {
                         <div className="col-lg-12">
                             <div className="heading-title text-center">
                                 <h2>Gallery</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                                <p>Explore the vibrant dishes and cultural moments in our Gallery to see what makes Eathiopian Restaurant truly special.</p>
                             </div>
                         </div>
                     </div>

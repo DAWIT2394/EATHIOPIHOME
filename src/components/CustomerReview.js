@@ -65,21 +65,32 @@ function CustomerReview() {
                             <i className="fa fa-volume-control-phone"></i>
                             <div className="overflow-hidden">
                                 <h4>Phone</h4>
-                                <p className="lead">+01 123-456-4590</p>
+                                {/* <p className="lead">+971 588 812 237‬
+                                </p> */}
+                                <p className="lead">
+  <a href="tel:+971588812237" className="text-blue-600 hover:underline">
+    +971 588 812 237
+  </a>
+  <p className="lead">
+ 
+</p>
+</p>
                             </div>
                         </div>
                         <div className="col-md-4 arrow-right">
                             <i className="fa fa-envelope"></i>
                             <div className="overflow-hidden">
                                 <h4>Email</h4>
-                                <p className="lead">yourmail@gmail.com</p>
+                                <p className="lead">eathiopianrestaurant@gmail.com
+                                </p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <i className="fa fa-map-marker"></i>
                             <div className="overflow-hidden">
                                 <h4>Location</h4>
-                                <p className="lead">800, Lorem Street, US</p>
+                                <p className="lead">Al Mamzar, Onyx Tower Ground Floor, Dubai
+                                </p>
                             </div>
                         </div>
                     </div>

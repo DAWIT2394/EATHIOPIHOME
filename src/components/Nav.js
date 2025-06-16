@@ -45,15 +45,15 @@ export default function Nav() {
                 Pages
               </Link>
               <div className="dropdown-menu" aria-labelledby="dropdown-a">
-                <Link className="dropdown-item" to="/reservation" onClick={handleNavLinkClick}>Reservation</Link>
-                <Link className="dropdown-item" to="/stuff" onClick={handleNavLinkClick}>Stuff</Link>
+                <Link className="dropdown-item" to="/Reservation" onClick={handleNavLinkClick}>Reservation</Link>
+                {/* <Link className="dropdown-item" to="/stuff" onClick={handleNavLinkClick}>Stuff</Link> */}
                 <Link className="dropdown-item" to="/gallery" onClick={handleNavLinkClick}>Gallery</Link>
               </div>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="#" id="dropdown-b" data-toggle="dropdown">
+              {/* <Link className="nav-link dropdown-toggle" to="#" id="dropdown-b" data-toggle="dropdown">
                 Blog
-              </Link>
+              </Link> */}
               <div className="dropdown-menu" aria-labelledby="dropdown-b">
                 <Link className="dropdown-item" to="/blog" onClick={handleNavLinkClick}>Blog</Link>
                 <Link className="dropdown-item" to="/blog-details" onClick={handleNavLinkClick}>Blog Single</Link>

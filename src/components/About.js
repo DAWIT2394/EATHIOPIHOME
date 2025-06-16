@@ -27,15 +27,12 @@ export default function About() {
                 </h1>
                 <h4>Little Story</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit
-                  feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend
-                  luctus, odio ante sodales augue, eget lacinia lectus erat et sem.
+                Discover the authentic flavors of Ethiopia at Eathiopian Restaurant, located in Al Mamzar, Onyx Tower, Dubai. We offer a unique dining experience that celebrates Ethiopia's rich culinary heritage, featuring traditional dishes made with love, spice, and culture. From injera to doro wat, every plate tells a story.
+
+Whether you're joining us for a casual lunch, a family dinner, or a cultural feast, our warm hospitality and vibrant atmosphere will make you feel at home. We also offer catering and takeaway services.
+
                 </p>
-                <p>
-                  Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem,
-                  a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem
-                  pulvinar.
-                </p>
+               
                 <a className="btn btn-lg btn-circle btn-outline-new-white" href="#">
                   Reservation
                 </a>
@@ -50,7 +47,6 @@ export default function About() {
             {/* Full Width Text */}
            
           </div>
-        <Galleryy/>
 
         </div>
       </div>

@@ -140,14 +140,12 @@ export default function Home() {
                 <h1>Welcome To <span className="text-primary">Eathiopian Restaurant</span></h1>
                 <h4 className="mt-3">Little Story</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat.
-                  Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante
-                  sodales augue, eget lacinia lectus erat et sem.
+                Discover the authentic flavors of Ethiopia at Eathiopian Restaurant, located in Al Mamzar, Onyx Tower, Dubai. We offer a unique dining experience that celebrates Ethiopia's rich culinary heritage, featuring traditional dishes made with love, spice, and culture. From injera to doro wat, every plate tells a story.
+
+Whether you're joining us for a casual lunch, a family dinner, or a cultural feast, our warm hospitality and vibrant atmosphere will make you feel at home. We also offer catering and takeaway services.
+
                 </p>
-                <p>
-                  Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem,
-                  a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.
-                </p>
+               
                 <a className="btn btn-lg btn-circle btn-outline-dark mt-3" href="#">
                   Reservation
                 </a>
@@ -162,12 +160,12 @@ export default function Home() {
             {/* Bottom Text */}
             <div className="col-md-12 mt-4">
               <div className="inner-pt text-center">
-                <p>
+                {/* <p>
                   Sed tincidunt, neque at egestas imperdiet, nulla sapien blandit nunc, sit amet pulvinar
                   orci nibh ut massa. Proin nec lectus sed nunc placerat semper. Duis hendrerit elit nec
                   sapien porttitor, ut pretium ipsum feugiat. Aenean volutpat porta nisi in gravida.
                   Curabitur pulvinar ligula sed facilisis bibendum. Nullam vitae nulla elit.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -258,7 +256,7 @@ export default function Home() {
                         <div className="col-lg-12">
                             <div className="heading-title text-center">
                                 <h2>Gallery</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                                <p>Explore the vibrant dishes and cultural moments in our Gallery to see what makes Eathiopian Restaurant truly special.</p>
                             </div>
                         </div>
                     </div>

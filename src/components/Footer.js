@@ -1,4 +1,5 @@
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 
 export default function Footer() {
   return (
@@ -9,8 +10,7 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6">
               <h3>About Us</h3>
               <p>
-                Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.
-              </p>
+              Experience the rich, authentic flavors of Ethiopia at Eathiopian Restaurant in Al Mamzar, Onyx Tower, Dubai. Enjoy traditional dishes like injera and doro wat, all made with love and spice. Whether it’s a casual lunch, family dinner, or special event, our warm hospitality and vibrant atmosphere will make you feel at home. Catering and takeaway available              </p>
             </div>
             <div className="col-lg-3 col-md-6">
               <h3>Subscribe</h3>
@@ -30,32 +30,49 @@ export default function Footer() {
                 </form>
               </div>
               <ul className="list-inline f-social">
-                <li className="list-inline-item">
-                  <a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-              </ul>
+  <li className="list-inline-item">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <i className="fa fa-facebook" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li className="list-inline-item">
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <i className="fa fa-twitter" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li className="list-inline-item">
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      <i className="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li className="list-inline-item">
+    <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer">
+      <i className="fa fa-google-plus" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li className="list-inline-item">
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <i className="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
             </div>
             <div className="col-lg-3 col-md-6">
               <h3>Contact information</h3>
-              <p className="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-              <p className="lead"><a href="#">+01 2000 800 9999</a></p>
-              <p><a href="#"> info@admin.com</a></p>
+              <p className="lead">Al Mamzar, Onyx Tower Ground Floor, Dubai
+              </p>
+              <p className="lead">
+  <a href="tel:+971588812237" className="text-blue-600 hover:underline">
+    📞 +971 588 812 237
+  </a>
+</p>
+
+              {/* <p><a href="#"> info@admin.com</a></p> */}
             </div>
             <div className="col-lg-3 col-md-6">
               <h3>Opening hours</h3>
-              <p><span className="text-color">Monday: </span>Closed</p>
+              <p><span className="text-color">Monday: </span>open</p>
               <p><span className="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
               <p><span className="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
               <p><span className="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
