@@ -184,7 +184,7 @@ Whether you're joining us for a casual lunch, a family dinner, or a cultural fea
 			<div className="row">
 				<div className="col-md-8 ml-auto mr-auto text-center">
 					<p className="<lead> ">
-						" If you're not the one cooking, stay out of the way and compliment the chef. "
+						Eathiopia Restaurant
 					</p>
 					<span className="lead">Michael Strahan</span>
 				</div>
