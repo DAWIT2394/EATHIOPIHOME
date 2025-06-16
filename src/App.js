@@ -7,10 +7,12 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/contact';
 import Reservation from './components/reservation';
+import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop /> {/* ✅ Scrolls to top on route change */}
       <Header />
 
       <Routes>
@@ -20,8 +22,6 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reservation" element={<Reservation />} />
-
-
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
