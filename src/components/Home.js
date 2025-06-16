@@ -184,7 +184,7 @@ Whether you're joining us for a casual lunch, a family dinner, or a cultural fea
 			<div className="row">
 				<div className="col-md-8 ml-auto mr-auto text-center">
 					<p className="<lead> ">
-						Eathiopia Restaurant
+						Eathiopian Restaurant
 					</p>
 					<span className="lead">Michael Strahan</span>
 				</div>
