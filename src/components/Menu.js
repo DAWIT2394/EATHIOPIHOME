@@ -5,7 +5,7 @@ export default function Menu() {
 
   const renderItems = (category) => {
     const allItems = [
-      { category: "drinks", name: "Special Drinks 1", img: "images/img-01.jpg", price: "$7.79" },
+      { category: "drinks", name: "Special Drinkssdsd 1", img: "images/img-01.jpg", price: "$745.79" },
       { category: "drinks", name: "Special Drinks 2", img: "images/img-02.jpg", price: "$9.79" },
       { category: "drinks", name: "Special Drinks 3", img: "images/img-03.jpg", price: "$10.79" },
       { category: "lunch", name: "Special Lunch 1", img: "images/img-04.jpg", price: "$15.79" },
@@ -24,7 +24,7 @@ export default function Menu() {
           <img src={item.img} className="img-fluid" alt={item.name} />
           <div className="why-text">
             <h4>{item.name}</h4>
-            <p>Sed id magna vitae eros sagittis euismod.</p>
+            {/* <p>Sed id magna vitae eros sagittis euismod.</p> */}
             <h5>{item.price}</h5>
           </div>
         </div>
@@ -50,7 +50,8 @@ export default function Menu() {
             <div className="col-lg-12">
               <div className="heading-title text-center">
                 <h2>Special Menu</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <p>Explore the vibrant dishes and cultural moments in our Gallery to see what makes Eathiopian Restaurant truly special.</p>
+
               </div>
             </div>
           </div>

@@ -114,11 +114,11 @@ export default function Home() {
                       <strong> <br /> {slide.title}</strong>
                     </h1>
                     <p className="m-b-40">
-                      See how your users experience your website in realtime or view <br /> 
-                      trends to see any changes in performance over time.
+                       <br /> 
+                      
                     </p>
                     <p>
-                      <a className="btn btn-lg btn-circle btn-outline-new-white" href="#">
+                      <a className="btn btn-lg btn-circle btn-outline-new-white" href="/Reservation">
                         Reservation
                       </a>
                     </p>
