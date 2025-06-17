@@ -18,12 +18,34 @@ export default function Reservation() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // You can add actual submit logic here (e.g. API call)
-        console.log("Reservation submitted:", formData);
-        alert("Reservation submitted!");
+        try {
+            const response = await fetch("http://localhost:7000/api/reserve", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+    
+            if (response.ok) {
+                alert("Reservation submitted successfully!");
+                setFormData({
+                    date: "",
+                    time: "",
+                    person: "",
+                    name: "",
+                    email: "",
+                    phone: "",
+                });
+            } else {
+                alert("Failed to submit reservation.");
+            }
+        } catch (err) {
+            console.error("Error:", err);
+            alert("An error occurred.");
+        }
     };
+    
 
     return (
         <div>

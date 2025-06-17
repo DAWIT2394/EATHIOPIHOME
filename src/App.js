@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/contact';
 import Reservation from './components/reservation';
 import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
+import ReservationList from './components/ReservationList';
 
 function App() {
   return (
@@ -22,7 +23,11 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reservation" element={<Reservation />} />
+        <Route path="/ReservationList" element={<ReservationList />} />
+
         <Route path="*" element={<Navigate to="/" />} />
+        
+      
       </Routes>
 
       <Footer />
