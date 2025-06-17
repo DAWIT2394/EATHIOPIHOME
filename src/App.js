@@ -9,7 +9,7 @@ import Contact from './components/contact';
 import Reservation from './components/reservation';
 import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
 import ReservationList from './components/ReservationList';
-
+// import ContactMessages from './components/ContactMessageslist';
 function App() {
   return (
     <div className="App">
@@ -24,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/ReservationList" element={<ReservationList />} />
+        {/* <Route path="/ContactMessageslist" element={<ContactMessages />} /> */}
 
         <Route path="*" element={<Navigate to="/" />} />
         

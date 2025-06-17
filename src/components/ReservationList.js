@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import ContactMessages from "./ContactMessageslist";
 export default function ReservationList() {
     const [reservations, setReservations] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -243,6 +243,7 @@ export default function ReservationList() {
                     </div>
                 </div>
             )}
+<ContactMessages/>
         </div>
     );
 }

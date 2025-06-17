@@ -1,7 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CustomerReview from './CustomerReview';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    try {
+      const res = await fetch('http://localhost:7000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus(data.error || 'Something went wrong.');
+      }
+    } catch (err) {
+      console.error('Submit error:', err);
+      setStatus('Failed to send message.');
+    }
+  };
+
   return (
     <div>
       {/* Map Section */}
@@ -20,7 +57,6 @@ export default function Contact() {
   </div>
 </div>
 
-
       {/* Contact Form Section */}
       <div className="contact-box">
         <div className="container">
@@ -28,27 +64,26 @@ export default function Contact() {
             <div className="col-lg-12">
               <div className="heading-title text-center">
                 <h2>Contact</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <p>Send us your message and we’ll get back to you shortly.</p>
               </div>
             </div>
           </div>
 
           <div className="row">
             <div className="col-lg-12">
-              <form id="contactForm">
+              <form id="contactForm" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-12">
                     <div className="form-group">
                       <input
                         type="text"
                         className="form-control"
-                        id="name"
                         name="name"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
                         required
-                        data-error="Please enter your name"
                       />
-                      <div className="help-block with-errors"></div>
                     </div>
                   </div>
 
@@ -57,35 +92,12 @@ export default function Contact() {
                       <input
                         type="email"
                         className="form-control"
-                        id="email"
                         name="email"
                         placeholder="Your Email"
+                        value={formData.email}
+                        onChange={handleChange}
                         required
-                        data-error="Please enter your email"
                       />
-                      <div className="help-block with-errors"></div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-12">
-                    <div className="form-group">
-                      <select
-                        className="custom-select d-block form-control"
-                        id="guest"
-                        required
-                        defaultValue=""
-                        data-error="Please Select Person"
-                      >
-                        <option value="" disabled>
-                          Please Select Person*
-                        </option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-                      <div className="help-block with-errors"></div>
                     </div>
                   </div>
 
@@ -93,21 +105,22 @@ export default function Contact() {
                     <div className="form-group">
                       <textarea
                         className="form-control"
-                        id="message"
+                        name="message"
                         placeholder="Your Message"
                         rows="4"
+                        value={formData.message}
+                        onChange={handleChange}
                         required
-                        data-error="Write your message"
                       ></textarea>
-                      <div className="help-block with-errors"></div>
                     </div>
 
                     <div className="submit-button text-center">
-                      <button className="btn btn-common" id="submit" type="submit">
+                      <button className="btn btn-common" type="submit">
                         Send Message
                       </button>
-                      <div id="msgSubmit" className="h3 text-center hidden"></div>
-                      <div className="clearfix"></div>
+                      <div className="clearfix mt-2">
+                        {status && <p style={{ color: 'green' }}>{status}</p>}
+                      </div>
                     </div>
                   </div>
                 </div>
