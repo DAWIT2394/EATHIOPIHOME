@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <div className="col-lg-3 col-md-6">
               <h3>Subscribe</h3>
-              <div className="subscribe_form">
+              {/* <div className="subscribe_form">
                 <form className="subscribe_form">
                   <input
                     name="EMAIL"
@@ -28,7 +28,7 @@ export default function Footer() {
                   </button>
                   <div className="clearfix"></div>
                 </form>
-              </div>
+              </div> */}
               <ul className="list-inline f-social">
   <li className="list-inline-item">
     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
