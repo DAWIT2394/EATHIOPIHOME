@@ -9,6 +9,7 @@ import Contact from './components/contact';
 import Reservation from './components/reservation';
 import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
 import ReservationList from './components/ReservationList';
+import MenuUploadForm from './components/MenuUploadForm';
 // import ContactMessages from './components/ContactMessageslist';
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/ReservationList" element={<ReservationList />} />
+        <Route path="/MenuUploadForm" element={<MenuUploadForm />} />
+
         {/* <Route path="/ContactMessageslist" element={<ContactMessages />} /> */}
 
         <Route path="*" element={<Navigate to="/" />} />
