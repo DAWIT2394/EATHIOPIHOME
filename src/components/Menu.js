@@ -12,6 +12,8 @@ export default function Menu() {
       { category: "lunch", name: "Special Lunch 2", img: "images/img-05.jpg", price: "$18.79" },
       { category: "lunch", name: "Special Lunch 3", img: "images/img-06.jpg", price: "$20.79" },
       { category: "dinner", name: "Special Dinner 1", img: "images/img-07.jpg", price: "$25.79" },
+      { category: "breakfast", name: "Special breakfast 1", img: "images/img-07.jpg", price: "$25.79" },
+
       { category: "dinner", name: "Special Dinner 2", img: "images/img-08.jpg", price: "$22.79" },
       { category: "dinner", name: "Special Dinner 3", img: "images/img-09.jpg", price: "$24.79" },
     ];
@@ -85,7 +87,14 @@ export default function Menu() {
       className={`nav-link mb-2 ${activeTab === "dinner" ? "active" : ""}`}
       onClick={() => setActiveTab("dinner")}
     >
-      Dinner
+     Dinner 
+    </button>
+    <button
+      style={{ border: "none" }}
+      className={`nav-link mb-2 ${activeTab === "breakfast" ? "active" : ""}`}
+      onClick={() => setActiveTab("breakfast")}
+    >
+      Breakfast
     </button>
   </div>
 </div>
