@@ -63,6 +63,8 @@ const MenuUploadForm = () => {
             <option value="drinks">Drinks</option>
             <option value="lunch">Lunch</option>
             <option value="dinner">Dinner</option>
+            <option value="Breakfast">Breakfast</option>
+
           </select>
         </div>
 
